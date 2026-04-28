@@ -67,3 +67,12 @@ Respuesta:
 5. En los intents de calculo, activar `Enable webhook call for this intent`.
 
 Para pruebas reales con Dialogflow no sirve `localhost`; Dialogflow necesita una URL publica HTTPS.
+
+## Desplegar con Docker
+
+El directorio incluye un `Dockerfile` listo para Cloud Run, Render, Railway u otro servicio que acepte contenedores.
+
+```bash
+docker build -t ohmia-webhook .
+docker run -p 8080:8080 ohmia-webhook
+```

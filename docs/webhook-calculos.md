@@ -50,3 +50,23 @@ Dialogflow exige una URL publica con HTTPS. Para produccion se recomienda:
 - Railway
 
 Durante desarrollo local se puede probar el servidor con `npm test` y con solicitudes HTTP locales.
+
+## URL que se pega en Dialogflow
+
+Cuando el servicio este desplegado, Dialogflow debe apuntar a:
+
+```text
+https://TU_DOMINIO_PUBLICO/webhook
+```
+
+Antes de pegarla, se puede probar:
+
+```text
+https://TU_DOMINIO_PUBLICO/health
+```
+
+Debe responder con un JSON similar a:
+
+```json
+{"ok":true,"service":"ohmia-webhook"}
+```
