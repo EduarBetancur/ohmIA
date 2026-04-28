@@ -1,0 +1,38 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000001",
+    "data": [
+      {
+        "text": "hola",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000002",
+    "data": [
+      {
+        "text": "buenas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000003",
+    "data": [
+      {
+        "text": "necesito ayuda con circuitos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

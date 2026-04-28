@@ -1,0 +1,35 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "name": "00_Bienvenida",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "Hola, soy ohmIA. Puedo ayudarte con ley de Ohm, leyes de Kirchhoff, resistencias y potencia electrica. ¿Que tema quieres repasar?",
+            "¡Hola! Soy ohmIA, tu tutor de circuitos resistivos. Puedes preguntarme por V = I * R, LCK, LKV, serie, paralelo o potencia."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

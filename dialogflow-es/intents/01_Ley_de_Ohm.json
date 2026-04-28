@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000002",
+  "name": "01_Ley_de_Ohm",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ohmia.ley_ohm",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "La ley de Ohm relaciona voltaje, corriente y resistencia: V = I * R. Tambien puedes despejar I = V / R o R = V / I.",
+            "Ohm dice que el voltaje en una resistencia es proporcional a la corriente que la atraviesa. Formula base: V = I * R."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

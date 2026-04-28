@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000099",
+  "name": "99_Fallback",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "No estoy seguro de haber entendido. Puedes preguntarme por ley de Ohm, LCK, LKV, resistencias en serie o paralelo, y potencia.",
+            "Intentemos con una pregunta mas concreta. Por ejemplo: '¿Que es LCK?' o 'Tengo 12 V y 4 ohmios'."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": []
+}

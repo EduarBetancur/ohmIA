@@ -1,0 +1,38 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000019",
+    "data": [
+      {
+        "text": "como calculo potencia electrica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000020",
+    "data": [
+      {
+        "text": "formula de potencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000021",
+    "data": [
+      {
+        "text": "potencia en una resistencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

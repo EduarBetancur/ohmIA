@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000004",
+  "name": "03_LCK_Corrientes",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ohmia.lck",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "La LCK dice que en un nodo la suma de corrientes que entran es igual a la suma de corrientes que salen. Es una consecuencia de que la carga no se acumula en el nodo.",
+            "Para aplicar LCK: identifica el nodo, separa corrientes que entran y salen, escribe entradas = salidas y despeja la incognita."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

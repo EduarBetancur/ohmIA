@@ -1,0 +1,38 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000016",
+    "data": [
+      {
+        "text": "resistencias en serie",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000017",
+    "data": [
+      {
+        "text": "resistencias en paralelo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000018",
+    "data": [
+      {
+        "text": "como encuentro resistencia equivalente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

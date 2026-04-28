@@ -1,0 +1,38 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000004",
+    "data": [
+      {
+        "text": "que es la ley de ohm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000005",
+    "data": [
+      {
+        "text": "explicame v igual i por r",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000006",
+    "data": [
+      {
+        "text": "formula de ohm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000007",
+  "name": "06_Potencia_Electrica",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ohmia.potencia",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "La potencia electrica puede calcularse como P = V * I. En resistencias tambien puedes usar P = I^2 * R o P = V^2 / R.",
+            "Si tienes voltaje y corriente usa P = V * I. Si tienes corriente y resistencia usa P = I^2 * R. Si tienes voltaje y resistencia usa P = V^2 / R."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

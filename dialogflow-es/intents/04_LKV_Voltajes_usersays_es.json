@@ -1,0 +1,38 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000013",
+    "data": [
+      {
+        "text": "que es lkv",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000014",
+    "data": [
+      {
+        "text": "ley de voltajes de kirchhoff",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000015",
+    "data": [
+      {
+        "text": "como aplico la ley de mallas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

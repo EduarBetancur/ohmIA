@@ -1,0 +1,20 @@
+{
+  "description": "ohmIA: chatbot educativo sobre ley de Ohm y leyes de Kirchhoff.",
+  "language": "es",
+  "shortDescription": "Tutor de circuitos resistivos para Telegram",
+  "examples": "Ley de Ohm, LCK, LKV, resistencias, potencia",
+  "linkToDocs": "",
+  "displayName": "ohmIA",
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
+  "defaultTimezone": "America/Bogota",
+  "isPrivate": true,
+  "mlMinConfidence": 0.35,
+  "supportedLanguages": [],
+  "onePlatformApiVersion": "v2",
+  "analyzeQueryTextSentiment": false,
+  "enabledKnowledgeBaseNames": [],
+  "knowledgeServiceConfidenceAdjustment": 0.0,
+  "dialogBuilderMode": false,
+  "baseActionPackagesUrl": ""
+}

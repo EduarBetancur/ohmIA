@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000003",
+  "name": "02_Calculo_Ley_de_Ohm",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ohmia.calculo_ohm",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "Para calcular con ley de Ohm usa estas formas: V = I * R, I = V / R y R = V / I. Dime dos datos con unidades y te indico el despeje.",
+            "Necesito dos datos para calcular el tercero: voltaje, corriente o resistencia. Por ejemplo: con 12 V y 4 ohm, I = 12 / 4 = 3 A."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
