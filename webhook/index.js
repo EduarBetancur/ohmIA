@@ -37,12 +37,15 @@ function dialogflowResponse(text) {
   return {
     fulfillmentText: text,
     fulfillmentMessages: [
-      {
-        text: {
-          text: [text],
-        },
-      },
-    ],
+  { text: { text: [texto] } },
+  {
+    platform: "TELEGRAM",
+    image: {
+      imageUri: imageUrl,
+      accessibilityText: imageAlt
+    }
+  }
+]
   };
 }
 
