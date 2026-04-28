@@ -337,7 +337,12 @@ function buildResponse(queryText, action = "") {
   const values = findValues(queryText);
   const type = detectCalculationType(queryText, action);
 
-  if (type === "videos") return recommendVideos(queryText);
+  if (type === "videos") {
+  return {
+    text: "Prueba imagen",
+    image: "https://eduarbetancur.github.io/ohmIA/assets/icon-sermones.png"
+  };
+}
   if (type === "exercise") return proposeExercise(queryText);
   if (type === "image") return explainImage(queryText);
   if (type === "voltage_divider") return calculateVoltageDivider(queryText);
