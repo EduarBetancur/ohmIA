@@ -10,6 +10,9 @@ ohmIA ayuda a estudiantes de circuitos electricos a:
 - Aplicar la ley de corrientes de Kirchhoff: corrientes que entran a un nodo igual a corrientes que salen.
 - Aplicar la ley de voltajes de Kirchhoff: la suma algebraica de voltajes en un lazo cerrado es cero.
 - Resolver dudas frecuentes sobre resistencias en serie, paralelo, potencia electrica y pasos de analisis.
+- Calcular resistencia equivalente, divisores de voltaje y casos simples de LCK con datos del usuario.
+- Proponer ejercicios de practica por tema.
+- Recomendar videos en espanol para reforzar conceptos.
 - Recomendar recursos del repositorio para repaso y practica.
 
 ## Estructura
@@ -18,7 +21,8 @@ ohmIA ayuda a estudiantes de circuitos electricos a:
 ohmIA/
 ├── assets/                         # Imagenes y recursos visuales del bot
 ├── data/
-│   └── faq.csv                     # Preguntas frecuentes para entrenamiento
+│   ├── faq.csv                     # Preguntas frecuentes para entrenamiento
+│   └── videos-recomendados.json    # Videos sugeridos en espanol
 ├── dialogflow-es/
 │   ├── agent.json                  # Metadatos base del agente Dialogflow ES
 │   ├── package.json                # Metadatos del paquete exportable
@@ -26,6 +30,7 @@ ohmIA/
 ├── docs/
 │   ├── conocimiento-ohmia.md       # Base de conocimiento curada desde el material
 │   ├── dialogflow-telegram.md      # Guia de configuracion Dialogflow + Telegram
+│   ├── recursos-visuales-y-videos.md
 │   ├── webhook-calculos.md         # Guia del webhook de calculos
 │   └── plan-proyecto.md            # Ruta de trabajo sugerida
 ├── webhook/                        # Servidor Node.js para calculos dinamicos
@@ -43,7 +48,7 @@ El repositorio contiene material de clase y referencia:
 - `ohm kirchoff irwin.pdf`
 - `ohm kirchoffsadico.pdf`
 
-La primera version del bot toma de estos recursos definiciones, formulas, pasos de solucion y ejemplos de aplicacion.
+La version actual del bot toma de estos recursos definiciones, formulas, pasos de solucion y ejemplos de aplicacion.
 
 ## Puesta en marcha en Dialogflow ES
 
@@ -53,16 +58,18 @@ La primera version del bot toma de estos recursos definiciones, formulas, pasos 
 4. Zona horaria sugerida: `America/Bogota`.
 5. Importar o recrear los intents ubicados en `dialogflow-es/intents/`.
 6. Activar integracion con Telegram usando el token entregado por BotFather.
-7. Probar preguntas como:
+7. Activar el webhook en `Fulfillment` con la URL publica terminada en `/webhook`.
+8. Probar preguntas como:
    - "Que es la ley de Ohm?"
    - "Como aplico LCK?"
    - "Si tengo 12 V y 4 ohmios, cual es la corriente?"
    - "Explicame la ley de voltajes de Kirchhoff"
+   - "Resistencia equivalente en paralelo de 10 ohm y 20 ohm"
+   - "Dame un ejercicio de potencia"
+   - "Recomiendame videos de Kirchhoff"
 
 La guia detallada esta en `docs/dialogflow-telegram.md`.
 
 ## Estado
 
-Base inicial lista para configurar el agente, entrenar intents y conectar Telegram.
-
-El webhook inicial ya calcula ley de Ohm y potencia sin dependencias externas. Ver `webhook/README.md`.
+El webhook calcula ley de Ohm, potencia, resistencia equivalente, divisor de voltaje, LCK simple, ejercicios y recomendaciones de videos sin dependencias externas. Ver `webhook/README.md`.

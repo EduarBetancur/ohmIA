@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000034",
+    "data": [
+      {
+        "text": "divisor de voltaje con 12 V 2 ohm y 4 ohm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000035",
+    "data": [
+      {
+        "text": "como calculo un divisor de voltaje",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

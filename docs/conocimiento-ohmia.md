@@ -120,6 +120,39 @@ I1 = (R2 / (R1 + R2)) * Itotal
 I2 = (R1 / (R1 + R2)) * Itotal
 ```
 
+## Divisor de voltaje
+
+Cuando varias resistencias estan en serie, el voltaje total se reparte proporcionalmente a cada resistencia:
+
+```text
+Vi = (Ri / Req) * Vtotal
+```
+
+Ejemplo:
+
+```text
+Vtotal = 12 V
+R1 = 2 ohm
+R2 = 4 ohm
+Req = 6 ohm
+V1 = (2 / 6) * 12 = 4 V
+V2 = (4 / 6) * 12 = 8 V
+```
+
+## Ejercicios que puede proponer ohmIA
+
+ohmIA puede proponer ejercicios cortos y pedir al estudiante que responda para revisar el procedimiento:
+
+- Ley de Ohm.
+- Potencia electrica.
+- Resistencias en serie.
+- Resistencias en paralelo.
+- LCK y LKV.
+
+## Videos recomendados
+
+Cuando el usuario pida videos, ohmIA debe recomendar recursos en espanol, priorizando canales educativos claros. La lista inicial esta en `data/videos-recomendados.json`.
+
 ## Conceptos de topologia
 
 - Rama: elemento de dos terminales dentro de un circuito.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ley de Ohm</title>
+  <desc id="desc">Diagrama triangular con voltaje, corriente y resistencia.</desc>
+  <rect width="900" height="520" fill="#f7fbff"/>
+  <text x="450" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#12355b">Ley de Ohm</text>
+  <polygon points="450,125 220,420 680,420" fill="#ffffff" stroke="#1d4f8f" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="335" y1="270" x2="565" y2="270" stroke="#1d4f8f" stroke-width="8"/>
+  <line x1="450" y1="270" x2="450" y2="420" stroke="#1d4f8f" stroke-width="8"/>
+  <text x="450" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="86" font-weight="700" fill="#e4572e">V</text>
+  <text x="355" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#2e7d32">I</text>
+  <text x="545" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#6a4c93">R</text>
+  <text x="450" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#243b53">V = I * R   |   I = V / R   |   R = V / I</text>
+</svg>

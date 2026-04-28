@@ -1,12 +1,12 @@
 {
-  "id": "00000000-0000-4000-8000-000000000006",
-  "name": "05_Serie_Paralelo",
+  "id": "00000000-0000-4000-8000-000000000012",
+  "name": "11_Divisor_Voltaje",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "ohmia.serie_paralelo",
+      "action": "ohmia.divisor_voltaje",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
@@ -14,8 +14,8 @@
           "type": 0,
           "lang": "es",
           "speech": [
-            "En serie circula la misma corriente y Req = R1 + R2 + ... + Rn. En paralelo todas las ramas tienen el mismo voltaje y 1/Req = 1/R1 + 1/R2 + ... + 1/Rn.",
-            "Regla rapida: serie suma resistencias; paralelo suma conductancias. Para dos resistencias en paralelo: Req = (R1 * R2) / (R1 + R2)."
+            "El divisor de voltaje en resistencias en serie usa Vi = (Ri / Req) * Vtotal.",
+            "Para calcular divisor de voltaje necesito Vtotal y las resistencias. Ejemplo: divisor con 12 V, 2 ohm y 4 ohm."
           ]
         }
       ],

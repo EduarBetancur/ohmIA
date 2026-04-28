@@ -1,0 +1,31 @@
+{
+  "id": "00000000-0000-4000-8000-000000000013",
+  "name": "12_Conceptos_Topologia",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ohmia.topologia",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": [
+            "Una rama es un elemento de dos terminales. Un nodo es un punto donde se conectan dos o mas ramas. Un lazo es una trayectoria cerrada. Una malla es un lazo que no contiene otros lazos dentro.",
+            "Para Kirchhoff necesitas ubicar nodos y mallas: LCK trabaja con nodos y corrientes; LKV trabaja con lazos o mallas y voltajes."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

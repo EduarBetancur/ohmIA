@@ -1,0 +1,32 @@
+[
+  {
+    "tema": "Ley de Ohm",
+    "titulo": "Ley de OHM [Explicacion FACIL]",
+    "canal": "Seletube",
+    "url": "https://www.youtube.com/watch?v=wHQrMuJAjak"
+  },
+  {
+    "tema": "Ley de corrientes de Kirchhoff",
+    "titulo": "Ley de corriente de Kirchhoff",
+    "canal": "Khan Academy en Espanol",
+    "url": "https://www.youtube.com/watch?v=CHPkjpSdQu4"
+  },
+  {
+    "tema": "Resistencias en serie",
+    "titulo": "Resistores en serie",
+    "canal": "Khan Academy en Espanol",
+    "url": "https://es.khanacademy.org/science/3-secundaria-cyt/x2972e7ae3b16ef5b%3Acampo-electrico-magnetico-y-corriente/x2972e7ae3b16ef5b%3Aley-de-ohm/v/ee-series-resistors"
+  },
+  {
+    "tema": "Resistencias en paralelo",
+    "titulo": "Resistores en paralelo",
+    "canal": "Khan Academy en Espanol",
+    "url": "https://es.khanacademy.org/science/physics/circuits-topic/circuits-resistance/v/circuits-part-3"
+  },
+  {
+    "tema": "Circuitos",
+    "titulo": "Unidad de circuitos",
+    "canal": "Khan Academy en Espanol",
+    "url": "https://es.khanacademy.org/science/physics/circuits-topic"
+  }
+]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ley de voltajes de Kirchhoff</title>
+  <desc id="desc">Malla cerrada con fuente y resistencias.</desc>
+  <rect width="900" height="520" fill="#fbfcf8"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#102a43">LKV: voltajes en una malla</text>
+  <rect x="230" y="140" width="440" height="250" rx="24" fill="none" stroke="#1d4f8f" stroke-width="10"/>
+  <circle cx="230" cy="265" r="34" fill="#ffffff" stroke="#e4572e" stroke-width="8"/>
+  <text x="230" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#e4572e">+</text>
+  <rect x="380" y="118" width="140" height="44" fill="#ffffff" stroke="#6a4c93" stroke-width="8"/>
+  <rect x="380" y="368" width="140" height="44" fill="#ffffff" stroke="#6a4c93" stroke-width="8"/>
+  <text x="450" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#6a4c93">R1</text>
+  <text x="450" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#6a4c93">R2</text>
+  <text x="166" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#e4572e">Vs</text>
+  <path d="M640 280 A170 170 0 0 1 280 330" fill="none" stroke="#2e7d32" stroke-width="8" stroke-linecap="round"/>
+  <path d="M290 333 L318 318 L315 350 Z" fill="#2e7d32"/>
+  <text x="450" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#102a43">+Vs - V1 - V2 = 0</text>
+</svg>

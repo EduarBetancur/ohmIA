@@ -1,12 +1,12 @@
 {
-  "id": "00000000-0000-4000-8000-000000000006",
-  "name": "05_Serie_Paralelo",
+  "id": "00000000-0000-4000-8000-000000000011",
+  "name": "10_Imagenes",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "ohmia.serie_paralelo",
+      "action": "ohmia.imagenes",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
@@ -14,8 +14,8 @@
           "type": 0,
           "lang": "es",
           "speech": [
-            "En serie circula la misma corriente y Req = R1 + R2 + ... + Rn. En paralelo todas las ramas tienen el mismo voltaje y 1/Req = 1/R1 + 1/R2 + ... + 1/Rn.",
-            "Regla rapida: serie suma resistencias; paralelo suma conductancias. Para dos resistencias en paralelo: Req = (R1 * R2) / (R1 + R2)."
+            "Tengo diagramas de apoyo para ley de Ohm, LCK, LKV, serie y paralelo en la carpeta assets.",
+            "Puedo indicarte que diagrama usar: ley-ohm.svg, nodo-lck.svg, malla-lkv.svg, resistencias-serie.svg o resistencias-paralelo.svg."
           ]
         }
       ],

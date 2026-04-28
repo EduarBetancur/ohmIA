@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Resistencias en serie</title>
+  <desc id="desc">Tres resistencias conectadas una despues de otra.</desc>
+  <rect width="900" height="520" fill="#f8fafc"/>
+  <text x="450" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#102a43">Resistencias en serie</text>
+  <line x1="90" y1="260" x2="190" y2="260" stroke="#1d4f8f" stroke-width="10"/>
+  <rect x="190" y="225" width="120" height="70" fill="#ffffff" stroke="#6a4c93" stroke-width="8"/>
+  <line x1="310" y1="260" x2="390" y2="260" stroke="#1d4f8f" stroke-width="10"/>
+  <rect x="390" y="225" width="120" height="70" fill="#ffffff" stroke="#6a4c93" stroke-width="8"/>
+  <line x1="510" y1="260" x2="590" y2="260" stroke="#1d4f8f" stroke-width="10"/>
+  <rect x="590" y="225" width="120" height="70" fill="#ffffff" stroke="#6a4c93" stroke-width="8"/>
+  <line x1="710" y1="260" x2="810" y2="260" stroke="#1d4f8f" stroke-width="10"/>
+  <text x="250" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#6a4c93">R1</text>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#6a4c93">R2</text>
+  <text x="650" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#6a4c93">R3</text>
+  <text x="450" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#102a43">Misma corriente por todos los elementos</text>
+  <text x="450" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#102a43">Req = R1 + R2 + R3</text>
+</svg>
