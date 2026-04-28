@@ -19,24 +19,24 @@ ohmIA ayuda a estudiantes de circuitos electricos a:
 
 ```text
 ohmIA/
-├── assets/                         # Imagenes y recursos visuales del bot
-├── data/
-│   ├── faq.csv                     # Preguntas frecuentes para entrenamiento
-│   └── videos-recomendados.json    # Videos sugeridos en espanol
-├── dialogflow-es/
-│   ├── agent.json                  # Metadatos base del agente Dialogflow ES
-│   ├── package.json                # Metadatos del paquete exportable
-│   └── intents/                    # Intents iniciales en formato Dialogflow ES
-├── docs/
-│   ├── conocimiento-ohmia.md       # Base de conocimiento curada desde el material
-│   ├── dialogflow-telegram.md      # Guia de configuracion Dialogflow + Telegram
-│   ├── github-pages.md             # Publicacion de imagenes con GitHub Pages
-│   ├── recursos-visuales-y-videos.md
-│   ├── webhook-calculos.md         # Guia del webhook de calculos
-│   └── plan-proyecto.md            # Ruta de trabajo sugerida
-├── webhook/                        # Servidor Node.js para calculos dinamicos
-├── index.html                      # Galeria publica para GitHub Pages
-└── materiales originales           # PDFs y presentaciones fuente
+|-- assets/                         # Imagenes y recursos visuales del bot
+|-- data/
+|   |-- faq.csv                     # Preguntas frecuentes para entrenamiento
+|   `-- videos-recomendados.json    # Videos sugeridos en espanol
+|-- dialogflow-es/
+|   |-- agent.json                  # Metadatos base del agente Dialogflow ES
+|   |-- package.json                # Metadatos del paquete exportable
+|   `-- intents/                    # Intents iniciales en formato Dialogflow ES
+|-- docs/
+|   |-- conocimiento-ohmia.md       # Base de conocimiento curada desde el material
+|   |-- dialogflow-telegram.md      # Guia de configuracion Dialogflow + Telegram
+|   |-- github-pages.md             # Publicacion de imagenes con GitHub Pages
+|   |-- recursos-visuales-y-videos.md
+|   |-- webhook-calculos.md         # Guia del webhook de calculos
+|   `-- plan-proyecto.md            # Ruta de trabajo sugerida
+|-- webhook/                        # Servidor Node.js para calculos dinamicos
+|-- index.html                      # Galeria publica para GitHub Pages
+`-- materiales originales           # PDFs y presentaciones fuente
 ```
 
 ## Material fuente
