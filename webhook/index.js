@@ -33,19 +33,28 @@ function readJsonBody(request) {
   });
 }
 
-function dialogflowResponse(text) {
+function dialogflowResponse(text, imageUrl = null) {
+  const messages = [
+    {
+      text: {
+        text: [text],
+      },
+    },
+  ];
+
+  if (imageUrl) {
+    messages.push({
+      platform: "TELEGRAM",
+      image: {
+        imageUri: imageUrl,
+        accessibilityText: "imagen",
+      },
+    });
+  }
+
   return {
     fulfillmentText: text,
-    fulfillmentMessages: [
-  { text: { text: [texto] } },
-  {
-    platform: "TELEGRAM",
-    image: {
-      imageUri: imageUrl,
-      accessibilityText: imageAlt
-    }
-  }
-]
+    fulfillmentMessages: messages,
   };
 }
 
@@ -73,7 +82,7 @@ const server = http.createServer(async (request, response) => {
     const action = payload.queryResult?.action || "";
     const answer = buildResponse(queryText, action);
 
-    sendJson(response, 200, dialogflowResponse(answer));
+    sendJson(response, 200, dialogflowResponse(answer.text, answer.image));
   } catch (error) {
     sendJson(response, 400, dialogflowResponse("No pude leer la solicitud del webhook. Revisa que Dialogflow envie JSON valido."));
   }
