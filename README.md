@@ -26,7 +26,9 @@ ohmIA/
 ├── docs/
 │   ├── conocimiento-ohmia.md       # Base de conocimiento curada desde el material
 │   ├── dialogflow-telegram.md      # Guia de configuracion Dialogflow + Telegram
+│   ├── webhook-calculos.md         # Guia del webhook de calculos
 │   └── plan-proyecto.md            # Ruta de trabajo sugerida
+├── webhook/                        # Servidor Node.js para calculos dinamicos
 └── materiales originales           # PDFs y presentaciones fuente
 ```
 
@@ -62,3 +64,5 @@ La guia detallada esta en `docs/dialogflow-telegram.md`.
 ## Estado
 
 Base inicial lista para configurar el agente, entrenar intents y conectar Telegram.
+
+El webhook inicial ya calcula ley de Ohm y potencia sin dependencias externas. Ver `webhook/README.md`.

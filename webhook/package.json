@@ -1,0 +1,14 @@
+{
+  "name": "ohmia-webhook",
+  "version": "1.0.0",
+  "description": "Webhook de calculos para el chatbot ohmIA en Dialogflow ES.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
