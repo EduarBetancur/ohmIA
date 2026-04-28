@@ -44,7 +44,6 @@ function dialogflowResponse(text, imageUrl = null) {
 
   if (imageUrl) {
     messages.push({
-      platform: "TELEGRAM",
       image: {
         imageUri: imageUrl,
         accessibilityText: "imagen",
