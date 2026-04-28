@@ -301,22 +301,37 @@ function explainImage(queryText) {
   const normalized = normalizeText(queryText);
 
   if (includesAny(normalized, ["lck", "nodo", "corriente"])) {
-    return `Para LCK mira este diagrama: ${ASSET_BASE_URL}/nodo-lck.svg\nMuestra corrientes que entran y salen de un nodo. La regla es entradas = salidas.`;
+    return {
+      text: "Diagrama LCK: corrientes que entran = corrientes que salen",
+      image: `${ASSET_BASE_URL}/nodo-lck.svg`
+    };
   }
 
   if (includesAny(normalized, ["lkv", "malla", "voltaje"])) {
-    return `Para LKV mira este diagrama: ${ASSET_BASE_URL}/malla-lkv.svg\nRecorre una malla cerrada y suma subidas y caidas de voltaje hasta obtener cero.`;
+    return {
+      text: "Diagrama LKV: suma de voltajes en malla = 0",
+      image: `${ASSET_BASE_URL}/malla-lkv.svg`
+    };
   }
 
   if (includesAny(normalized, ["paralelo"])) {
-    return `Para resistencias en paralelo mira este diagrama: ${ASSET_BASE_URL}/resistencias-paralelo.svg\nTodas las ramas comparten el mismo voltaje y la corriente se divide.`;
+    return {
+      text: "Resistencias en paralelo",
+      image: `${ASSET_BASE_URL}/resistencias-paralelo.svg`
+    };
   }
 
   if (includesAny(normalized, ["serie"])) {
-    return `Para resistencias en serie mira este diagrama: ${ASSET_BASE_URL}/resistencias-serie.svg\nLa misma corriente pasa por todos los elementos y las resistencias se suman.`;
+    return {
+      text: "Resistencias en serie",
+      image: `${ASSET_BASE_URL}/resistencias-serie.svg`
+    };
   }
 
-  return `Tengo diagramas de apoyo aqui:\n- Ley de Ohm: ${ASSET_BASE_URL}/ley-ohm.svg\n- LCK: ${ASSET_BASE_URL}/nodo-lck.svg\n- LKV: ${ASSET_BASE_URL}/malla-lkv.svg\n- Serie: ${ASSET_BASE_URL}/resistencias-serie.svg\n- Paralelo: ${ASSET_BASE_URL}/resistencias-paralelo.svg`;
+  return {
+    text: "Aquí tienes varios diagramas útiles",
+    image: `${ASSET_BASE_URL}/ley-ohm.svg`
+  };
 }
 
 function detectCalculationType(text, action = "") {
@@ -337,12 +352,7 @@ function buildResponse(queryText, action = "") {
   const values = findValues(queryText);
   const type = detectCalculationType(queryText, action);
 
-  if (type === "videos") {
-  return {
-    text: "Prueba imagen",
-    image: "https://eduarbetancur.github.io/ohmIA/assets/icon-sermones.png"
-  };
-}
+  if (type === "videos") return recommendVideos(queryText);
   if (type === "exercise") return proposeExercise(queryText);
   if (type === "image") return explainImage(queryText);
   if (type === "voltage_divider") return calculateVoltageDivider(queryText);

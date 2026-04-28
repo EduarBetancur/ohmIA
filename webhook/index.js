@@ -81,6 +81,12 @@ const server = http.createServer(async (request, response) => {
     const action = payload.queryResult?.action || "";
     const answer = buildResponse(queryText, action);
 
+if (typeof answer === "string") {
+  sendJson(response, 200, dialogflowResponse(answer));
+} else {
+  sendJson(response, 200, dialogflowResponse(answer.text, answer.image));
+}
+
     sendJson(response, 200, dialogflowResponse(answer.text, answer.image));
   } catch (error) {
     sendJson(response, 400, dialogflowResponse("No pude leer la solicitud del webhook. Revisa que Dialogflow envie JSON valido."));
