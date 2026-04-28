@@ -34,23 +34,26 @@ function readJsonBody(request) {
 }
 
 function dialogflowResponse(text, imageUrl = null) {
+  const messages = [
+    {
+      text: {
+        text: [text],
+      },
+    },
+  ];
+
   if (imageUrl) {
-    return {
-      fulfillmentMessages: [
-        {
-          payload: {
-            telegram: {
-              text: text,
-              photo: imageUrl
-            }
-          }
-        }
-      ]
-    };
+    messages.push({
+      image: {
+        imageUri: imageUrl,
+        accessibilityText: "imagen",
+      },
+    });
   }
 
   return {
     fulfillmentText: text,
+    fulfillmentMessages: messages,
   };
 }
 
