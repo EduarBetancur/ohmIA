@@ -30,10 +30,12 @@ ohmIA/
 ├── docs/
 │   ├── conocimiento-ohmia.md       # Base de conocimiento curada desde el material
 │   ├── dialogflow-telegram.md      # Guia de configuracion Dialogflow + Telegram
+│   ├── github-pages.md             # Publicacion de imagenes con GitHub Pages
 │   ├── recursos-visuales-y-videos.md
 │   ├── webhook-calculos.md         # Guia del webhook de calculos
 │   └── plan-proyecto.md            # Ruta de trabajo sugerida
 ├── webhook/                        # Servidor Node.js para calculos dinamicos
+├── index.html                      # Galeria publica para GitHub Pages
 └── materiales originales           # PDFs y presentaciones fuente
 ```
 
@@ -73,3 +75,5 @@ La guia detallada esta en `docs/dialogflow-telegram.md`.
 ## Estado
 
 El webhook calcula ley de Ohm, potencia, resistencia equivalente, divisor de voltaje, LCK simple, ejercicios y recomendaciones de videos sin dependencias externas. Ver `webhook/README.md`.
+
+Las imagenes pueden publicarse con GitHub Pages. Ver `docs/github-pages.md`.

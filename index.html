@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ohmIA - Recursos visuales</title>
+    <meta
+      name="description"
+      content="Recursos visuales publicos para el chatbot ohmIA sobre ley de Ohm y leyes de Kirchhoff."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #102a43;
+        --muted: #52606d;
+        --line: #d9e2ec;
+        --paper: #f8fafc;
+        --white: #ffffff;
+        --blue: #1d4f8f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Arial, sans-serif;
+        line-height: 1.55;
+      }
+
+      header,
+      main,
+      footer {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 44px 0 22px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1.05;
+      }
+
+      p {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        padding: 24px 0 48px;
+      }
+
+      article {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      article img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      article div {
+        padding: 14px;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      a {
+        color: var(--blue);
+        font-weight: 700;
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 22px 0 36px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ohmIA recursos visuales</h1>
+      <p>
+        Imagenes publicas para usar en Dialogflow, Telegram o documentacion del chatbot
+        educativo sobre ley de Ohm, LCK, LKV y resistencias.
+      </p>
+    </header>
+
+    <main>
+      <section class="grid" aria-label="Imagenes disponibles">
+        <article>
+          <img src="assets/ley-ohm.svg" alt="Triangulo de ley de Ohm" />
+          <div>
+            <h2>Ley de Ohm</h2>
+            <a href="assets/ley-ohm.svg">assets/ley-ohm.svg</a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/nodo-lck.svg" alt="Nodo para ley de corrientes de Kirchhoff" />
+          <div>
+            <h2>LCK</h2>
+            <a href="assets/nodo-lck.svg">assets/nodo-lck.svg</a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/malla-lkv.svg" alt="Malla para ley de voltajes de Kirchhoff" />
+          <div>
+            <h2>LKV</h2>
+            <a href="assets/malla-lkv.svg">assets/malla-lkv.svg</a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/resistencias-serie.svg" alt="Resistencias conectadas en serie" />
+          <div>
+            <h2>Serie</h2>
+            <a href="assets/resistencias-serie.svg">assets/resistencias-serie.svg</a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/resistencias-paralelo.svg" alt="Resistencias conectadas en paralelo" />
+          <div>
+            <h2>Paralelo</h2>
+            <a href="assets/resistencias-paralelo.svg">assets/resistencias-paralelo.svg</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      ohmIA - Repositorio educativo de circuitos electricos.
+    </footer>
+  </body>
+</html>
