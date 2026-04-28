@@ -43,23 +43,6 @@ El repositorio contiene material de clase y referencia:
 - `ohm kirchoff irwin.pdf`
 - `ohm kirchoffsadico.pdf`
 
-La primera version del bot toma de estos recursos definiciones, formulas, pasos de solucion y ejemplos de aplicacion.
-
-## Puesta en marcha en Dialogflow ES
-
-1. Crear un proyecto en Google Cloud.
-2. Abrir Dialogflow ES y crear un agente llamado `ohmIA`.
-3. Idioma predeterminado: `Spanish - es`.
-4. Zona horaria sugerida: `America/Bogota`.
-5. Importar o recrear los intents ubicados en `dialogflow-es/intents/`.
-6. Activar integracion con Telegram usando el token entregado por BotFather.
-7. Probar preguntas como:
-   - "Que es la ley de Ohm?"
-   - "Como aplico LCK?"
-   - "Si tengo 12 V y 4 ohmios, cual es la corriente?"
-   - "Explicame la ley de voltajes de Kirchhoff"
-
-La guia detallada esta en `docs/dialogflow-telegram.md`.
 
 ## Estado
 
