@@ -70,4 +70,9 @@ assert.match(
   /Ejercicio/
 );
 
+assert.match(
+  buildResponse("muestrame una imagen de lck", "ohmia.imagenes"),
+  /https:\/\/eduarbetancur\.github\.io\/ohmIA\/assets\/nodo-lck\.svg/
+);
+
 console.log("Pruebas del calculador ohmIA completadas correctamente.");

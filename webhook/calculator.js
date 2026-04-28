@@ -1,5 +1,6 @@
 const DECIMAL_NUMBER = String.raw`[-+]?\d+(?:[.,]\d+)?`;
 const OHM = "ohm";
+const ASSET_BASE_URL = "https://eduarbetancur.github.io/ohmIA/assets";
 
 const VIDEOS = [
   {
@@ -300,22 +301,22 @@ function explainImage(queryText) {
   const normalized = normalizeText(queryText);
 
   if (includesAny(normalized, ["lck", "nodo", "corriente"])) {
-    return "Para LCK usa el diagrama assets/nodo-lck.svg: muestra corrientes que entran y salen de un nodo. La regla es entradas = salidas.";
+    return `Para LCK mira este diagrama: ${ASSET_BASE_URL}/nodo-lck.svg\nMuestra corrientes que entran y salen de un nodo. La regla es entradas = salidas.`;
   }
 
   if (includesAny(normalized, ["lkv", "malla", "voltaje"])) {
-    return "Para LKV usa el diagrama assets/malla-lkv.svg: recorre una malla cerrada y suma subidas y caidas de voltaje hasta obtener cero.";
+    return `Para LKV mira este diagrama: ${ASSET_BASE_URL}/malla-lkv.svg\nRecorre una malla cerrada y suma subidas y caidas de voltaje hasta obtener cero.`;
   }
 
   if (includesAny(normalized, ["paralelo"])) {
-    return "Para paralelo usa assets/resistencias-paralelo.svg: todas las ramas comparten el mismo voltaje y la corriente se divide.";
+    return `Para resistencias en paralelo mira este diagrama: ${ASSET_BASE_URL}/resistencias-paralelo.svg\nTodas las ramas comparten el mismo voltaje y la corriente se divide.`;
   }
 
   if (includesAny(normalized, ["serie"])) {
-    return "Para serie usa assets/resistencias-serie.svg: la misma corriente pasa por todos los elementos y las resistencias se suman.";
+    return `Para resistencias en serie mira este diagrama: ${ASSET_BASE_URL}/resistencias-serie.svg\nLa misma corriente pasa por todos los elementos y las resistencias se suman.`;
   }
 
-  return "Tengo diagramas de apoyo en assets/: ley-ohm.svg, nodo-lck.svg, malla-lkv.svg, resistencias-serie.svg y resistencias-paralelo.svg.";
+  return `Tengo diagramas de apoyo aqui:\n- Ley de Ohm: ${ASSET_BASE_URL}/ley-ohm.svg\n- LCK: ${ASSET_BASE_URL}/nodo-lck.svg\n- LKV: ${ASSET_BASE_URL}/malla-lkv.svg\n- Serie: ${ASSET_BASE_URL}/resistencias-serie.svg\n- Paralelo: ${ASSET_BASE_URL}/resistencias-paralelo.svg`;
 }
 
 function detectCalculationType(text, action = "") {
